@@ -24,12 +24,7 @@ class App extends Component {
       <div className="ais-InstantSearch">
         <h1>React InstantSearch e-commerce demo</h1>
         <InstantSearch indexName="demo_ecommerce" searchClient={searchClient}>
-          <div className="left-panel">
-            <ClearRefinements />
-            <h2>Brands</h2>
-            <RefinementList attribute="brand" />
-            <Configure hitsPerPage={8} />
-          </div>
+          
           <div className="right-panel">
             <SearchBox />
             <Hits hitComponent={Hit} />
